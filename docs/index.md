@@ -5,6 +5,8 @@ fastAPI for standard CRUD operations of database tables in a relational database
 
 I  was faced with writing an API for an app that some database tables that were all related to one master table. Meaning a single entry in the master table could have one or more related entries in any of the other tables.
 
+## backstory
+
 For our example let's say that the master table contained user information. And one of these related tables contained items the user owned and another one contained the users todo list. The two related tables did not have any direct conections with each other as they contained lists of completely different nature. 
 
 Each would need a typical Create and Read API. Well that's not a problem you say and start coding away... Nothing to it, you finish coding for one table and realize that you can pretty much copy and paste the code for table number two, change a few schema and model references and voila, second table API is done in record time.
